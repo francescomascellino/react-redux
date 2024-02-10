@@ -2,7 +2,9 @@ import { useState } from 'react';
 
 import './App.css';
 
+import { useSelector } from 'react-redux';
 
+import PostForm from './components/postform';
 
 function App() {
     const [count, setCount] = useState(0)

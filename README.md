@@ -116,6 +116,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 ```
 
+## We import _useSelector_  to access the global state of our app, which is stored in the Redux Store. This hook allows us to select specific data from that state. In this case we are selecting the data from postSlice.
+```js
 import { useState } from 'react';
 
 import './App.css';
@@ -124,8 +126,6 @@ import { useSelector } from 'react-redux';
 
 import PostForm from './components/postform';
 
-## We import _useSelector_  to access the global state of our app, which is stored in the Redux Store. This hook allows us to select specific data from that state. In this case we are selecting the data from postSlice.
-```js
 import { useSelector } from 'react-redux';
 
 function App() {
